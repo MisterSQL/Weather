@@ -1,0 +1,94 @@
+.container{
+    text-align: center;
+    margin-top: 1em;
+
+}
+
+#content{
+    max-width: 30%;
+    margin: 0 auto;
+    border: 1px solid white;
+    padding: 1em;
+    border-radius: 1em;
+}
+#popup,#left-menu{
+    background: #000;
+}
+
+.mainPictureWeather img{
+    height: 207px;
+    width: 285px;
+    flex-shrink: 0;
+}
+
+#sunnyWeather{
+    width: 150px;
+    height: 120px;
+    margin-bottom: 1em;
+}
+
+#currentTemp,#aboutCity{
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+#aboutCity{
+    font-size: 44px;
+    padding: 20px;
+    border: none;
+    background: none;
+}
+#aboutCity:hover{
+    color: beige;
+}
+
+#form{
+    flex-direction: column;
+}
+#form{
+    margin-bottom: 1em;
+}
+
+.box,#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    color: #FFF;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#content{
+    animation-name: move-up-down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes move-up-down {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 10px;
+    }
+    100% {
+        top: 0px;
+    }
+    /*from {*/
+    /*    top: 100px;*/
+    /*}*/
+    /*to {*/
+    /*    top: 0px;*/
+    /*}*/
+}
+
